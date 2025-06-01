@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightBox Studios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="LightBox Logo">
+            <span>LightBox</span>
+        </div>
+        <div class="nav-buttons">
+            <button onclick="location.href='{{ url_for('about_us') }}'">关于我们</button>
+            <button onclick="location.href='{{ url_for('bulletin') }}'">公告板</button>
+            <button onclick="location.href='{{ url_for('suggestions') }}'">建议浏览</button>
+            <button onclick="location.href='{{ url_for('join_us') }}'">加入我们</button>
+            <button onclick="location.href='{{ url_for('message_center') }}'">消息中心</button>
+        </div>
+    </nav>
+</body>
+</html>

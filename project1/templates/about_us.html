@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - LightBox Studios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="LightBox Logo">
+            <span>LightBox</span>
+        </div>
+        <div class="nav-buttons">
+            <button onclick="location.href='{{ url_for('index') }}'">返回主页</button>
+        </div>
+    </nav>
+    <div class="content">
+        <h1>关于我们</h1>
+        <div class="text-box">
+            <h2>我们的简介</h2>
+            <p>LightBox是一个由初中生成立的编程社群，致力于各种编程的学习，例如SCRATCH、KITTEN等，还交流包括CCW在内的各个少儿编程社区</p>
+        </div>
+        <div class="text-box">
+            <h2>我们的使命</h2>
+            <p>我们的核心价值观是：让每一个梦想得以自由翱翔，让每一位创客畅所欲言</p>
+        </div>
+        <div class="text-box">
+            <h2>团队介绍</h2>
+            <p>团队目前共有20人，我们诚恳邀请您的加入，我们的所有项目将均匀分工。</p>
+        </div>
+        <div class="text-box">
+            <h2>联系我们</h2>
+            <p>团队目前正在使用QQ\微信，当然，还有一个冷门的聊天软件：NERCHAT，它的网址是chat.neboer.site</p>
+        </div>
+        <div class="text-box">
+            <h2>我们的具体联系方式</h2>
+            <p>nerchat可以加入空间：光盒LightBox，也可以加我的私信：lightbox-offical,当然拼写错误有点尴尬，不必在意，哔站请加：注册方块RegeditBlock</p>
+        </div>
+    </div>
+</body>
+</html>

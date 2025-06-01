@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    background-color: #333; /* 高级灰背景 */
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色导航栏 */
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    color: white;
+    font-size: 24px;
+    font-family: 'KaiTi', '楷体', cursive; /* 楷体字体 */
+}
+
+.nav-buttons button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px; /* 圆角按钮 */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.content {
+    padding: 20px;
+}
+
+.text-box {
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景，与导航栏一致 */
+    padding: 20px;
+    margin-bottom: 20px; /* 文本框之间的间距 */
+    border-radius: 5px; /* 圆角 */
+}
+
+.text-box h2 {
+    font-size: 20px; /* 标题字体大小 */
+    margin-top: 0; /* 移除默认的上边距 */
+    margin-bottom: 10px; /* 标题和正文之间的间距 */
+}
+
+.text-box p {
+    margin: 0; /* 移除默认的正文边距 */
+    margin-bottom: 10px; /* 正文和按钮之间的间距 */
+}
+
+.text-box button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px; /* 圆角按钮 */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.text-box button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>消息中心 - LightBox Studios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="LightBox Logo">
+            <span>LightBox</span>
+        </div>
+        <div class="nav-buttons">
+            <button onclick="location.href='{{ url_for('index') }}'">返回主页</button>
+        </div>
+    </nav>
+    <div class="content">
+        <h1>消息中心</h1>
+        <div class="text-box">
+            <h2>请移步至Matrix聊天室</h2>
+            <p>消息中心板块已经迁移至Matrix聊天室。</p>
+            <button onclick="location.href='https://matrix.to/#/#lightbox-official:chat.neboer.site'">跳转</button>
+        </div>
+    </div>
+</body>
+</html>

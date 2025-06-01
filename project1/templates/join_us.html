@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加入我们 - LightBox Studios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="LightBox Logo">
+            <span>LightBox</span>
+        </div>
+        <div class="nav-buttons">
+            <button onclick="location.href='{{ url_for('index') }}'">返回主页</button>
+        </div>
+    </nav>
+    <div class="content">
+        <h1>加入我们</h1>
+        <div class="text-box">
+            <h2>社区聊天</h2>
+            <p>加入我们的社区聊天，与其他成员交流。</p>
+            <button onclick="location.href='https://chat.neboer.site'">访问</button>
+        </div>
+        <div class="text-box">
+            <h2>Matrix 聊天室</h2>
+            <p>在 Matrix 上与我们的官方聊天室连接。</p>
+            <button onclick="location.href='https://matrix.to/#/#lightbox-official:chat.neboer.site'">访问</button>
+        </div>
+        <div class="text-box">
+            <h2>哔哩哔哩空间</h2>
+            <p>关注我们在哔哩哔哩的官方空间。</p>
+            <button onclick="location.href='https://space.bilibili.com/3546714772343354?spm_id_from=333.337.0.0'">访问</button>
+        </div>
+        <div class="text-box">
+            <h2>编程猫社区</h2>
+            <p>在编程猫社区查看我们的用户页面。</p>
+            <button onclick="location.href='https://shequ.codemao.cn/user/7984238'">访问</button>
+        </div>
+        <div class="text-box">
+            <h2>CCW 网站</h2>
+            <p>访问我们在 CCW 的学生页面。</p>
+            <button onclick="location.href='https://www.ccw.site/student/67ab30be4b57da1266f86d75'">访问</button>
+        </div>
+    </div>
+</body>
+</html>
